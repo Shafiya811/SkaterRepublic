@@ -78,12 +78,81 @@ html {
     background-size: cover;
 }
 
+.button {
+    padding: 1rem;
+    border-radius: 10%;
+    font-size: 1rem;
+    background-color: #070F2B;
+    color: #fff;
+    font-weight: 300;
+}
+
+.sideText{
+    padding: 1rem;
+    background-color: rgba(253, 253, 253, 0.5);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.aboutUs{
+    padding: 1rem;
+    background: linear-gradient(to bottom, #134936, #436850);
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+.leftSide {
+    font-size: 2rem;
+}
+
+.rightSide {
+    margin: 1rem;
+}
+
 @media screen and (min-width : 420px) {
     .text {
         font-size: 2rem;
         margin: 1rem ;
     }
+    .sideText {
+        padding: 2rem;
+        font-size: 1.5rem;
+        
+    }
 }
-@media screen and (min-width : 570px) {
+
+@media screen and (min-width : 700px) {
+    .sideText {
+        padding: 2rem;
+        width: 50vw;
+        font-size: 1.5rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (min-width : 1000px) {
+    .sideText {
+        padding: 2rem;
+        margin-right: 50rem;
+        font-size: 1.5rem;
+        margin-left: 10rem;
+    }
+    .aboutUs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     
+    }
+    
+    .leftSide {
+        margin: 1rem;
+        font-size: 4rem;
+        width: 30%;
+    }
+    
+    .rightSide {
+        margin: 1rem;
+        font-size: 1rem;
+        width: 70%;
+    }
 }
