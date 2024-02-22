@@ -1,0 +1,89 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.content {
+    text-align: center;
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.text {
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #070F2B;
+    background-color: rgba(253, 253, 253, 0.5);
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax effect for the sections */
+.video-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width : 420px) {
+    .text {
+        font-size: 2rem;
+        margin: 1rem ;
+    }
+}
+@media screen and (min-width : 570px) {
+    
+}
