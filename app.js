@@ -21,3 +21,21 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+ //purchase page
+  document.addEventListener('DOMContentLoaded', function() {
+    var showFormBtn = document.getElementById('showFormBtn');
+    var formSection = document.getElementById('formSection');
+
+    showFormBtn.addEventListener('click', function() {
+        formSection.style.display = "block";
+        overlay.style.display = 'block';
+    });
+});
+
+document.getElementById('closeFormBtn').addEventListener('click', function() {
+  var formSection = document.getElementById('formSection');
+  var overlay = document.getElementById('overlay');
+  formSection.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
