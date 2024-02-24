@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.content {
+margin: 1rem;
+padding: 2rem;
+}
+
+.brandName {
+  font-size: 3rem;
+  font-weight: 1000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+text-decoration: underline;
+}
+
+.available {
+  margin-top: 1rem;
+  color: #fff;
+  font: inherit;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+  vertical-align: baseline;
+
+}
+.image {
+  margin: 1rem;
+  width: 70vw;
+  border: 0.3rem black solid;
+}
+ .purchaseBtn {
+  background-color: #337357;
+  color: #fff;
+  font-weight:700;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70vw;
+  text-shadow: none;
+  padding: 3px 8px;
+  margin-top: 1rem;
+ }
+.formSection {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  z-index: 1000;
+  min-width: 50%;
+  min-height: 50%; 
+  overflow: auto;
+  gap: 2rem;
+}
+
+#country, #elements, #options {
+  outline-style: none;
+  margin-top: 2rem;
+  padding: 3px 8px;
+  width: 70vw;
+  color: #fff;
+  background-color: #337357;
+} 
+
+#closeFormBtn {
+  width: 50px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+  background-color: #1a5a3e;
+  color: #fff;
+  border: none;
+}
+
+.purchaseBtn:hover {
+  background-color: #427D9D;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+@media screen and (min-width : 600px) {
+.image {
+  width: 40vw;
+}
+.purchase button {
+  width: 40vw;
+  font-size: larger;
+}
+
+.formSection {
+  width: 45vw;
+  
+}
+
+.formSection .purchaseBtn {
+  width: 45vw;
+}
+
+#country, #elements, #options {
+  width: 45vw;
+} 
+
+}
+
+@media screen and (min-width : 1000px) {
+  
+.formSection {
+  width: 30vw;
+  min-width: 35%;
+  
+}
+
+.formSection .purchaseBtn {
+  width: 30vw;
+  margin-top: 1rem;
+}
+
+#country, #elements, #options {
+  width: 30vw;
+} 
+}

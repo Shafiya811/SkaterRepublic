@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="purchaseStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- header section -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SkaterRepublic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="purchase.html">Purchase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Social Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="community.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="video-section ">
+        <div class="content">
+          <video autoplay muted loop>
+            <source src="images/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="context">
+            <div class="brandName"> Skater Republic </div>
+            <div class="available">Available Now</div>
+          </div>
+          <div class="purchase">
+          <img src="images/poster.jpg" alt="image" class="image"><br>
+          <button id="showFormBtn" class="purchaseBtn ">PURCHASE</button>
+            </div>
+        </div>
+        <div id="formSection" class="formSection hidden">
+                <button id="closeFormBtn" style="position: absolute; top: 10px; right: 10px;">X</button>
+                <form>
+                    <!-- <label for="country">Select a country:</label> -->
+                    <select id="country">
+                        <option class="possible" value="ae">United Arab Emirates</option>
+                        <option class="possible" value="ar">Argentina</option>
+                        <option class="possible" value="at">Austria</option>
+                        <option class="possible" value="at-de">at-de</option>
+                        <option class="possible" value="au">Australia</option>
+                        <option class="possible" value="ba">Bosnia and Herzegovina</option>
+                        <option class="possible" value="be">Belgium</option>
+                        <option class="possible" value="be-fr">Belgium French</option>
+                        <option class="possible" value="be-nl">be-nl</option>
+                        <option class="possible" value="bg">Bulgaria</option>
+                        <option class="possible" value="bh">Bahrain</option>
+                        <option class="possible" value="bo">Bolivia</option>
+                        <option class="possible" value="br">Brazil</option>
+                        <option class="possible" value="ca">Canada</option>
+                        <option class="possible" value="ca-fr">Le Canada Français</option>
+                        <option class="possible" value="ch">Switzerland</option>
+                        <option class="possible" value="ch-de">Schweizerische Eidgenossenschaft</option>
+                        <option class="possible" value="ch-fr">Confédération Suisse</option>
+                        <option class="possible" value="ch-it">Confederazione Svizzera</option>
+                        <option class="possible" value="cl">Chile</option>
+                        <option class="possible" value="cn-s">简体中文</option>
+                        <option class="possible" value="co">Colombia</option>
+                        <option class="possible" value="cr">Costa Rica</option>
+                        <option class="possible" value="cy">Cypress</option>
+                        <option class="possible" value="cz">Czech Republic</option>
+                        <option class="possible" value="de">Deutschland</option>
+                        <option class="possible" value="dk">Danmark</option>
+                        <option class="possible" value="ec">Ecuador</option>
+                        <option class="possible" value="es">España</option>
+                        <option class="possible" value="fi">Suomi</option>
+                        <option class="possible" value="fr">France</option>
+                        <option class="possible" value="gb">United Kingdom</option>
+                        <option class="possible" value="gr">Greece</option>
+                        <option class="possible" value="gt">Guatemala</option>
+                        <option class="possible" value="hk">Hong Kong</option>
+                        <option class="possible" value="hn">Honduras</option>
+                        <option class="possible" value="hr">Croatia</option>
+                        <option class="possible" value="hu">Hungary</option>
+                        <option class="possible" value="id">Indonesia</option>
+                        <option class="possible" value="ie">Ireland</option>
+                        <option class="possible" value="il">Israel</option>
+                        <option class="possible" value="in">India</option>
+                        <option class="possible" value="is">Iceland</option>
+                        <option class="possible" value="it">Italia</option>
+                        <option class="possible" value="jp">日本</option>
+                        <option class="possible" value="kw">Kuwait</option>
+                        <option class="possible" value="lb">Lebanon</option>
+                        <option class="possible" value="lu-de">Luxemburg</option>
+                        <option class="possible" value="lu-fr">Luxembourg</option>
+                        <option class="possible" value="mk">Macedonia</option>
+                        <option class="possible" value="mt">Malta</option>
+                        <option class="possible" value="mx">México</option>
+                        <option class="possible" value="my">Malaysia</option>
+                        <option class="possible" value="ni">Nicaragua</option>
+                        <option class="possible" value="nl">Netherlands</option>
+                        <option class="possible" value="no">Norge</option>
+                        <option class="possible" value="nz">New Zealand</option>
+                        <option class="possible" value="om">Oman</option>
+                        <option class="possible" value="pa">Panama</option>
+                        <option class="possible" value="pe">Peru</option>
+                        <option class="possible" value="pl">Polska</option>
+                        <option class="possible" value="pt">Portugal</option>
+                        <option class="possible" value="py">Paraguay</option>
+                        <option class="possible" value="qa">Qatar</option>
+                        <option class="possible" value="ro">Romania</option>
+                        <option class="possible" value="rs">Serbia</option>
+                        <option class="possible" value="ru">Росси́я</option>
+                        <option class="possible" value="sa">Saudi Arabia</option>
+                        <option class="possible" value="se">Sverige</option>
+                        <option class="possible" value="sg">Singapore</option>
+                        <option class="possible" value="si">Slovenia</option>
+                        <option class="possible" value="sk">Slovakia</option>
+                        <option class="possible" value="sv">El Salvador</option>
+                        <option class="possible" value="tr">Turkey</option>
+                        <option class="possible" value="tw">Taiwan</option>
+                        <option class="possible" value="ua-ru">Ukraine - Russian</option>
+                        <option class="possible" value="us">United States</option>
+                        <option class="possible" value="uy">Uruguay</option>
+                        <option class="possible" value="xk">Kosovo</option>
+                        <option class="possible" value="za">South Africa</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                    <!-- <label for="elements">Select an element:</label> -->
+                    <select id="elements">
+                        <option class="possible" value="ps4">PS4™</option>
+                        <option class="possible" value="xboxone">XBOX One®</option>
+                        <option class="possible" value="xboxseriesxs">XBOX Series X|S</option>
+                        <option class="possible" value="pc">Epic</option>
+                        <option class="possible" value="ps5">PS5™</option>
+                        <option class="possible" value="switch">Nintendo Switch</option>
+                        <option class="possible" value="steam">Steam</option>
+                        <!-- Add more elements as needed -->
+                    </select>
+                    <!-- <label for="options">Select an option:</label> -->
+                    <select id="options">
+                        <option class="possible" value="cross-gen-deluxe">Cross-Gen Deluxe Edition</option>
+                        <option class="possible" value="digital">Digital Edition</option>
+                        <option class="possible" value="digital-deluxe">Digital Deluxe Edition</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <button class="purchaseBtn">Purchase</button>
+                </form>
+            </div>
+            <div id="overlay" class="overlay"></div>
+      </section>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
