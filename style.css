@@ -98,6 +98,7 @@ html {
     padding: 1rem;
     background: linear-gradient(to bottom, #134936, #436850);
     width: 100vw;
+    height: 100vh;
     color: #fff;
 }
 
