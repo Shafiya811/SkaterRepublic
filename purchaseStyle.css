@@ -91,6 +91,34 @@ text-decoration: underline;
   z-index: 999;
 }
 
+/* Community style */
+.communityContent {
+  width: 100vw;
+  height: 100vh;
+}
+
+.img {
+  width: 100vw;
+  height: 95vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.join {
+  z-index: 2;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 2rem sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(253, 253, 253, 0.5);
+  padding: 1rem;
+}
+
 @media screen and (min-width : 600px) {
 .image {
   width: 40vw;
@@ -131,4 +159,13 @@ text-decoration: underline;
 #country, #elements, #options {
   width: 30vw;
 } 
+.join {
+    top: 50%;
+    left: 25%;
+  }
+
+  .join button {
+    width: 9vw;
+    justify-content: center;
+  }
 }
